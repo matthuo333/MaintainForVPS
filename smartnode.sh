@@ -29,14 +29,14 @@ if [ $(CheckFile) == 1 ];then
 	echo "canceled it"
 fi
 
-scp -o StrictHostKeyChecking=no root@"chsg.matthuo.space":/root/checkfile /root/
+scp -o StrictHostKeyChecking=no root@"xxx.com":/root/checkfile /root/
 if [ "$?" -ne "0" ];
 then
     echo "FAIL1"
-    scp -o StrictHostKeyChecking=no root@"chsg.matthuo.space":/root/checkfile /root/
+    scp -o StrictHostKeyChecking=no root@"xxx.com":/root/checkfile /root/
     if [ "$?" -ne "0" ];then
 	    echo "FAIL2"
-	    scp -o StrictHostKeyChecking=no root@"chsg.matthuo.space":/root/checkfile /root/
+	    scp -o StrictHostKeyChecking=no root@"xxx.com":/root/checkfile /root/
 	    if [ "$?" -ne "0" ];then
 		    echo "FAIL3"
 	    else
